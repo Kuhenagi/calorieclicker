@@ -1,0 +1,262 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  h1 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  #cal {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  #clickButton {
+    font-size: 24px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  #clickButton:hover {
+    background-color: #ff3333;
+  }
+  
+  .heart {
+    position: fixed;
+    pointer-events: none;
+    animation-name: fly;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateY(100vh) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px) rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
+  #shop {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .item-name {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .item-price {
+    margin-right: 10px;
+  }
+  
+  .buy-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #45a049;
+  }
+  
+  .shop {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shop h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .shop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .shop li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .shop .item-name {
+    flex: 1;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .shop .item-price {
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .shop .buy-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop .buy-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination .page-button {
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination .page-button:hover {
+    background-color: #eee;
+  }
+  
+  .pagination .page-button.active {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+  }
+  
+  .pagination .prev-button,
+  .pagination .next-button {
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination .prev-button:hover,
+  .pagination .next-button:hover {
+    background-color: #2980b9;
+  }
+  .item-count {
+    margin-left: 10px;
+    color: #888;
+    font-size: 14px;
+  }
+  .shop-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .shop-items .item-name {
+    flex: 1;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .shop-items .item-price {
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .shop-items .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .shop-items .buyButton {
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .shop-items .buyButton:hover {
+    background-color: #45a049;
+  }
+  
+  .shop-items .sellButton {
+    padding: 6px 12px;
+    background-color: #fdd835;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-items .sellButton:hover {
+    background-color: #fbc02d;
+  }
+  
